@@ -6,7 +6,19 @@ body {
 }
 .headerFont {
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: rgba(225, 225, 225, 0.1);
+  background-image: url(images/color.jpg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  40% {
+    background-position: left 800px top 10px;
+  }
 }
 .jumbotron {
   background-image: url(images/header2.png);
@@ -14,6 +26,7 @@ body {
   margin: 20px;
   font-family: "Raleway", sans-serif;
   border: 1px solid black;
+  color: black;
 }
 #topic-input {
   width: 275px;
@@ -24,7 +37,7 @@ body {
 }
 #submitBttn {
   background-image: url(images/header2.png);
-  color: white;
+  color: black;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   margin-left: 50px;
@@ -43,6 +56,8 @@ body {
   width: 300px;
   height: 50px;
   border-radius: 10px;
+  border: 1px solid black;
+  color: black;
 }
 #summary {
   background-image: url(images/header2.png);
@@ -50,6 +65,8 @@ body {
   height: 50px;
   border-radius: 10px;
   margin-left: 125px;
+  border: 1px solid black;
+  color: black;
 }
 #infoTitle {
   background-image: url(images/header2.png);
@@ -57,14 +74,34 @@ body {
   height: 50px;
   border-radius: 10px;
   margin-left: 125px;
+  border: 1px solid black;
+  color: black;
 }
 #castTitle {
   background-image: url(images/header2.png);
   width: 300px;
   height: 85px;
   border-radius: 10px;
+  border: 1px solid black;
+  color: black;
 }
 p {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
+#line {
+  border-right: 1px solid black;
+  height: 1100px;
+  width: 150px;
+}
+hr {
+  border-color: black;
 }
