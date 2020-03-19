@@ -5,9 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Underground Movie Bunker</title>
+  <!-- -------------------CSS---------------------- -->
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <!-- -------------------Javascript and Jquery---------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- -------------------firebase---------------------- -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <!-- -------------------fonts---------------------- -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +24,7 @@
       <div class="col-md-12">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4">Underground Movie Bunker!</h1>
+            <h1 class="display-4"><span class = "headerFont">Underground Movie Bunker!</span></h1>
           </div>
         </div>
       </div>
@@ -26,54 +34,62 @@
     <div class="row">
       <div class="col-md-3">
         <form id="topic-form">
-          <label for="topic-input">Search</label>
+          <input type="text" id="topic-input" type="text" placeholder="Enter Movie Title"/>
           <br />
-          <input type="text" id="topic-input" />
+          <button id = "submitBttn" type="submit">Search</button>
           <br />
       </div>
       <div class="col-md-6">
         <div class="media">
-          <img id="movie-poster" src="https://static.tvtropes.org/pmwiki/pub/images/anastasia_movie.jpg" class="mr-3"
-            alt="movie-poster">
+          <h1 id = "summary">Summary</h1>
+          <div id = "movie-poster"></div>
           <div class="media-body">
-            <h5 class="mt-0">Anastasia</h5>
-            <p id="movie-info">
-              The evil wizard Rasputin (Christopher Lloyd) puts a hex on the royal Romanovs and young Anastasia (Meg
-              Ryan) disappears when their palace is overrun. Years later, the Grand Duchess (Angela Lansbury) offers a
-              reward for Anastasia's return. Two scheming Russians (John Cusack, Kelsey Grammer), planning to pawn off a
-              phony, hold auditions and choose an orphan girl with a remarkable resemblance to the missing princess.
-              They bring her to Paris for the reward, not knowing she's the real Anastasia.
-            </p>
+            <h2 class="mt-0" id = "movie-title"></h2>
+            <p id="movie-info"></p>
           </div>
         </div>
       </div>
+      
       <div class="col-md-3">
         <div class="card" style="width: 18rem;">
-          <img id="movie-gif" src="https://thumbs.gfycat.com/BoringImmediateGoshawk-size_restricted.gif"
-            class="card-img-top" alt="movie-gif">
+          <h1 id = "title">Reviews</h1>
+          <div id="movie-gif"></div>
           <div class="card-body">
-            <p id="movie-rating" class="card-text">Movie Rating: G</p>
-            <p id="movie-review">Let others carp about the disservices to history: this Anastasia rises above its flaws
-              to offer an engaging, emotionally resonant story of a girl's search for identity. Within its historical,
-              quasi-factual context, the film presents a situation almost everyone can relate to--that of trying to find
-              one's place in the world...
-            </p>
+            <p id="movie-review"></p>
+            <p id="movie-review-percent"></p>
+            <p id="movie-review2"></p>
+            <p id="movie-review-percent2"></p>
+            <p id="movie-review3"></p>
+            <p id="movie-review-percent3"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Child Appropriate?</h1>
-          <p id="true-or-false" class="lead">True</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 id = "title">Rating</h1>
+        <p id = "rating"></p>
+      </div> 
+      <div class="col-md-6">
+        <h1 id = "infoTitle">General Info</h1>
+        <div class = "info">
+          <p id = "info"></p>
+          <p id = "info2"></p>
+          <p id = "info3"></p>
+          <p id = "info4"></p>
         </div>
-      </div>
+      </div> 
+      <div class="col-md-3">
+        <h1 id = "castTitle">Director and Cast</h1>
+        <p id = "director"></p>
+        <p id = "cast"></p>
+        <p id = "writer"></p>
+      </div> 
     </div>
-  </div>
+  </div>  
+ 
 </body>
 
 </html>
