@@ -99,8 +99,10 @@ footer {
 }
 #line {
   border-right: 1px solid black;
-  height: 1100px;
+  height: 100%;
   width: 150px;
+  position: absolute;
+  top: 0px;
 }
 hr {
   border-color: black;
