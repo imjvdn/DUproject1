@@ -7,6 +7,7 @@ $(document).ready(function() {
       "https://api.giphy.com/v1/gifs/search?q=" +
       gif +
       "&limit=1&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9";
+
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -47,7 +48,7 @@ $(document).ready(function() {
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      //   console.log(response);
+      console.log(response);
       var resultsInfo = response.data;
       $("#movie-review").text(JSON.stringify(response.Ratings[1].Source));
 
@@ -91,28 +92,4 @@ $(document).ready(function() {
       $("#writer").text(JSON.stringify("Writer: " + response.Writer));
     });
   });
-
-  // $("#submitBttn").on("click", function(event) {
-  //   event.preventDefault();
-  //   var movie = $("#topic-input");
-
-  //   var settings = {
-  //     async: true,
-  //     crossDomain: true,
-  //     url:
-  //       "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" +
-  //       movie +
-  //       "&country=us",
-  //     method: "GET",
-  //     headers: {
-  //       "x-rapidapi-host":
-  //         "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
-  //       "x-rapidapi-key": "e2b7f71e0bmsh8b9eab57efd24e4p1eef53jsn8da49b3e89b2"
-  //     }
-  //   };
-
-  //   $.ajax(settings).done(function(response) {
-  //     console.log(response);
-  //   });
-  // });
 });
