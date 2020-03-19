@@ -6,7 +6,19 @@ body {
 }
 .headerFont {
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: rgba(225, 225, 225, 0.1);
+  background-image: url(images/color.jpg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
+  }
+  40% {
+    background-position: left 800px top 10px;
+  }
 }
 .jumbotron {
   background-image: url(images/header2.png);

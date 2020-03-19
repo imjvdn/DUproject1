@@ -92,27 +92,27 @@ $(document).ready(function() {
     });
   });
 
-  $("#submitBttn").on("click", function(event) {
-    event.preventDefault();
-    var movie = $("#topic-input");
+  // $("#submitBttn").on("click", function(event) {
+  //   event.preventDefault();
+  //   var movie = $("#topic-input");
 
-    var settings = {
-      async: true,
-      crossDomain: true,
-      url:
-        "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" +
-        movie +
-        "&country=us",
-      method: "GET",
-      headers: {
-        "x-rapidapi-host":
-          "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
-        "x-rapidapi-key": "e2b7f71e0bmsh8b9eab57efd24e4p1eef53jsn8da49b3e89b2"
-      }
-    };
+  //   var settings = {
+  //     async: true,
+  //     crossDomain: true,
+  //     url:
+  //       "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=" +
+  //       movie +
+  //       "&country=us",
+  //     method: "GET",
+  //     headers: {
+  //       "x-rapidapi-host":
+  //         "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
+  //       "x-rapidapi-key": "e2b7f71e0bmsh8b9eab57efd24e4p1eef53jsn8da49b3e89b2"
+  //     }
+  //   };
 
-    $.ajax(settings).done(function(response) {
-      console.log(response);
-    });
-  });
+  //   $.ajax(settings).done(function(response) {
+  //     console.log(response);
+  //   });
+  // });
 });
