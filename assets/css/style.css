@@ -1,11 +1,11 @@
 body {
   background-image: url(images/background2.png);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   margin: 20px;
 }
 .headerFont {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: rgba(225, 225, 225, 0.1);
   background-image: url(images/color.jpg);
   background-repeat: repeat-x;
@@ -24,7 +24,7 @@ body {
   background-image: url(images/header2.png);
   text-align: center;
   margin: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   border: 1px solid black;
   color: black;
 }
@@ -32,14 +32,17 @@ body {
   width: 275px;
   margin-top: 25px;
   margin-left: 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   border: 1px solid black;
+}
+.card-body {
+  margin-left: 105px;
 }
 #submitBttn {
   background-image: url(images/header2.png);
   color: black;
   font-size: 18px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-left: 50px;
   width: 150px;
   height: 35px;
@@ -49,7 +52,7 @@ body {
 }
 #movie-gif {
   width: 100px;
-  margin-left: -55px;
+  /* margin-left: -10px; */
 }
 #title {
   background-image: url(images/header2.png);
@@ -87,7 +90,7 @@ body {
 }
 p {
   font-size: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 footer {
   position: fixed;
