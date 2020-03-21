@@ -49,7 +49,7 @@ body {
 }
 #movie-gif {
   width: 100px;
-  margin-left: -55px;
+  /* margin-left: -55px; */
 }
 #title {
   background-image: url(images/header2.png);
