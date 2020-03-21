@@ -29,9 +29,9 @@ body {
   color: black;
 }
 #topic-input {
-  width: 275px;
+  width: 100%;
   margin-top: 25px;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   font-family: "Raleway", sans-serif;
   border: 1px solid black;
 
@@ -41,20 +41,20 @@ body {
   color: black;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
-  margin-left: 50px;
-  width: 150px;
+  /* margin-left: 50px; */
+  width: 100%;
   height: 35px;
   margin-top: 10px;
   border: 1px solid black;
   border-radius: 5px;
 }
 #movie-gif {
-  width: 100px;
+  width: 100%;
   /* margin-left: -55px; */
 }
 #title {
   background-image: url(images/header2.png);
-  width: 300px;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
   border: 1px solid black;
@@ -62,25 +62,25 @@ body {
 }
 #summary {
   background-image: url(images/header2.png);
-  width: 300px;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
-  margin-left: 125px;
+  /* margin-left: 125px; */
   border: 1px solid black;
   color: black;
 }
 #infoTitle {
   background-image: url(images/header2.png);
-  width: 300px;
+  width: 100%;
   height: 50px;
   border-radius: 10px;
-  margin-left: 125px;
+  /* margin-left: 125px; */
   border: 1px solid black;
   color: black;
 }
 #castTitle {
   background-image: url(images/header2.png);
-  width: 300px;
+  width: 100%;
   height: 85px;
   border-radius: 10px;
   border: 1px solid black;
@@ -101,7 +101,7 @@ footer {
 #line {
   border-right: 1px solid black;
   height: 100%;
-  width: 150px;
+  width: 100%;
   position: absolute;
   top: 0px;
 }
