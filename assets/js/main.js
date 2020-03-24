@@ -1,29 +1,27 @@
 $(document).ready(function() {
-  function gifDisplay() {
-    var gif = $("#topic-input")
-      .val()
-      .trim();
+  function gifDisplay(gifSearchTerm) {
     var queryURL =
       "https://api.giphy.com/v1/gifs/search?q=" +
-      gif +
+      gifSearchTerm +
       "&limit=1&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9";
-
+    console.log(queryURL);
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(response) {
-      //   console.log(response.data[0]);
+        console.log(response.data[0]);
       var results = response.data;
 
       for (var i = 0; i < results.length; i++) {
         var gifRating = $("<p>").text("rating: g");
-        var img = $("<img>").attr(
+        var img = $("<img style='width:400px'>").attr(
           "src",
           //   results[i].images.fixed_height_still.url
           results[i].images.original.url
         );
         $("#movie-gif").html(img);
       }
+      console.log("done with the ajax call");
     });
   }
   $("#submitBttn").on("click", function(event) {
@@ -32,7 +30,9 @@ $(document).ready(function() {
     var gif = $("#topic-input")
       .val()
       .trim();
-    gifDisplay();
+    gifDisplay(gif);
+    console.log("hi");
+    console.log(gif);
   });
 
   $("#submitBttn").on("click", function(event) {
