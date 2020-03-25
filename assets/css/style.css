@@ -119,3 +119,16 @@ hr {
     width: 600px;
   }
 }
+@media screen and (max-width: 450px) {
+  .wrapper {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .wrapper,
+  h1 {
+    font-size: small;
+    width: 150px;
+  }
+}
